@@ -8,14 +8,16 @@
   <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />   
   <link href="css/base.css" rel="stylesheet" type="text/css" />
  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script> 
   <script src="js/own.js"></script>
  </head> 
  
  <body>
+ 
  <div class="container-fluid">
  <div class="row-fluid">
 
-<div class="col-md-3"><h1 class="title">PC 远程管理</h1>
+<div class="col-md-3"><h1 class="title">PC 管理</h1>
 	<div class="list-group">
 	<a href="#" class="list-group-item active list1">运行状态</a>
 	<a href="#" class="list-group-item list2">快捷管理</a>
@@ -39,9 +41,8 @@
 </div> 
 
 </div>
- </div>
+</div>
  
  
-   <script src="js/bootstrap.min.js" type="text/javascript"></script> 
- </body>
+   </body>
  </html>	

@@ -30,4 +30,29 @@ $(function() {
     $(".text-cmd").html(data);
 	});
 	});
+	
+	$(".btn-shutdown").click(function() {
+	var timex,shutdownstring;
+	timex = $(".txt-time").val() * 60;
+	shutdownstring = "shutdown -s -t " + timex;
+	$.get("plugin/cmd-run.php", { command:shutdownstring} );
+	});
+
+	$(".btn-cancelst").click(function() {
+	$.get("plugin/cmd-run.php", { command:"shutdown -a"} );
+	});
+	
+	$(".btn-shutdown").click(function() {
+	var timex,shutdownstring;
+	timex = $(".txt-time").val() * 60;
+	shutdownstring = "shutdown -s -t " + timex;
+	$.get("plugin/cmd-run.php", { command:shutdownstring} );
+	});
+	
+	$(".btn-rshutdown").click(function() {
+	var timex,shutdownstring;
+	timex = $(".txt-rtime").val() * 60;
+	shutdownstring = "shutdown -r -t " + timex;
+	$.get("plugin/cmd-run.php", { command:shutdownstring} );
+	});
 });

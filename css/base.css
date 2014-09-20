@@ -2,12 +2,17 @@
 width:960px;
 }
 .title{
-background: #3498DB;
+background: #E67E22;
 color: #fff;
-padding: 10px 20px;
+padding: 15px;
 border-radius: 4px;
--webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+border: solid 1px #CA6A14;
+}
+.right-2 img{
+    width:128px;
+    height:128px;
 }
 .right-2 img:hover{
 -webkit-animation:swing 1s .2s ease both;
@@ -38,4 +43,7 @@ text-align:center;
 }
 .input-cmd{
 margin-bottom:5px;
+}
+.input-p{
+line-height:40px;
 }

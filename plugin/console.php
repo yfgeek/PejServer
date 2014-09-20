@@ -1,3 +1,4 @@
+
 <h1>运行状态</h1>
 	<blockquote>
 	<p>这里显示您的基本信息及权限</p>
@@ -17,7 +18,7 @@
 
 	<td><?php echo memory_get_usage()?>MB</td>
 	</tr><tr>
-	<td>1</td>
-	<td>2</td>
+	<td>运行时间</td>
+	<td><?php $myRuntime =explode(",", exec('uptime')); print $myRuntime[0];?></td>
 	</tr>	
 	</table>
