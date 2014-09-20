@@ -1,0 +1,144 @@
+
+主机名:           PC
+OS 名称:          Microsoft Windows 8.1 专业版
+OS 版本:          6.3.9600 暂缺 Build 9600
+OS 制造商:        Microsoft Corporation
+OS 配置:          独立工作站
+OS 构件类型:      Multiprocessor Free
+注册的所有人:     yfipad@outlook.com
+注册的组织:       
+产品 ID:          00261-50000-00000-AA989
+初始安装日期:     2014/7/10, 11:33:20
+系统启动时间:     2014/9/20, 9:30:25
+系统制造商:       Acer
+系统型号:         Aspire V5-471G
+系统类型:         x64-based PC
+处理器:           安装了 1 个处理器。
+                  [01]: Intel64 Family 6 Model 58 Stepping 9 GenuineIntel ~1701 Mhz
+BIOS 版本:        Phoenix Technologies Ltd. V1.10., 2012/6/8
+Windows 目录:     C:\windows
+系统目录:         C:\windows\system32
+启动设备:         \Device\HarddiskVolume1
+系统区域设置:     zh-cn;中文(中国)
+输入法区域设置:   en-us;英语(美国) 
+时区:             (UTC+08:00)北京，重庆，香港特别行政区，乌鲁木齐
+物理内存总量:     7,988 MB
+可用的物理内存:   3,761 MB
+虚拟内存: 最大值: 9,268 MB
+虚拟内存: 可用:   4,199 MB
+虚拟内存: 使用中: 5,069 MB
+页面文件位置:     C:\pagefile.sys
+域:               WORKGROUP
+登录服务器:       \\MicrosoftAccount
+修补程序:         安装了 72 个修补程序。
+                  [01]: KB2899189_Microsoft-Windows-CameraCodec-Package
+                  [02]: KB2868626
+                  [03]: KB2883200
+                  [04]: KB2889543
+                  [05]: KB2893294
+                  [06]: KB2894029
+                  [07]: KB2894179
+                  [08]: KB2894852
+                  [09]: KB2894856
+                  [10]: KB2900986
+                  [11]: KB2901128
+                  [12]: KB2913152
+                  [13]: KB2918614
+                  [14]: KB2919355
+                  [15]: KB2920189
+                  [16]: KB2923528
+                  [17]: KB2931358
+                  [18]: KB2931366
+                  [19]: KB2939153
+                  [20]: KB2939576
+                  [21]: KB2950153
+                  [22]: KB2954879
+                  [23]: KB2955164
+                  [24]: KB2956575
+                  [25]: KB2958262
+                  [26]: KB2959626
+                  [27]: KB2959977
+                  [28]: KB2961072
+                  [29]: KB2961908
+                  [30]: KB2962140
+                  [31]: KB2962409
+                  [32]: KB2964718
+                  [33]: KB2965142
+                  [34]: KB2965500
+                  [35]: KB2965788
+                  [36]: KB2966804
+                  [37]: KB2966826
+                  [38]: KB2966828
+                  [39]: KB2967917
+                  [40]: KB2969817
+                  [41]: KB2971203
+                  [42]: KB2971239
+                  [43]: KB2971850
+                  [44]: KB2972094
+                  [45]: KB2972213
+                  [46]: KB2972280
+                  [47]: KB2973114
+                  [48]: KB2973201
+                  [49]: KB2973351
+                  [50]: KB2973448
+                  [51]: KB2975061
+                  [52]: KB2975719
+                  [53]: KB2976627
+                  [54]: KB2976897
+                  [55]: KB2976978
+                  [56]: KB2977629
+                  [57]: KB2977765
+                  [58]: KB2978668
+                  [59]: KB2979500
+                  [60]: KB2979582
+                  [61]: KB2980654
+                  [62]: KB2981580
+                  [63]: KB2981655
+                  [64]: KB2982791
+                  [65]: KB2982794
+                  [66]: KB2987114
+                  [67]: KB2988948
+                  [68]: KB2989647
+                  [69]: KB2990532
+                  [70]: KB2993100
+                  [71]: KB2993651
+                  [72]: KB2995004
+网卡:             安装了 7 个 NIC。
+                  [01]: Qualcomm Atheros AR5BWB222 Wireless Network Adapter
+                      连接名:      WLAN
+                      启用 DHCP:   是
+                      DHCP 服务器: 192.168.191.1
+                      IP 地址
+                        [01]: 192.168.191.5
+                        [02]: fe80::1139:d57e:fde4:a989
+                  [02]: Realtek PCIe GBE Family Controller
+                      连接名:      以太网
+                      状态:        媒体连接已中断
+                  [03]: Bluetooth 设备(个人区域网)
+                      连接名:      Bluetooth 网络连接
+                      状态:        媒体连接已中断
+                  [04]: TeamViewer VPN Adapter
+                      连接名:      本地连接
+                      状态:        媒体连接已中断
+                  [05]: VMware Virtual Ethernet Adapter for VMnet1
+                      连接名:      VMware Network Adapter VMnet1
+                      启用 DHCP:   否
+                      IP 地址
+                        [01]: 192.168.70.1
+                        [02]: fe80::f008:d818:5763:edff
+                  [06]: VMware Virtual Ethernet Adapter for VMnet8
+                      连接名:      VMware Network Adapter VMnet8
+                      启用 DHCP:   否
+                      IP 地址
+                        [01]: 192.168.134.1
+                        [02]: fe80::508c:5e22:319:ddd6
+                  [07]: VirtualBox Host-Only Ethernet Adapter
+                      连接名:      VirtualBox Host-Only Network
+                      启用 DHCP:   否
+                      IP 地址
+                        [01]: 172.16.250.254
+                        [02]: fe80::6102:9f89:ae6a:480
+Hyper-V 要求:     虚拟机监视器模式扩展: 是
+                  固件中已启用虚拟化: 是
+                  二级地址转换: 是
+                  数据执行保护可用: 是

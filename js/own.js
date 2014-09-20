@@ -55,4 +55,18 @@ $(function() {
 	shutdownstring = "shutdown -r -t " + timex;
 	$.get("plugin/cmd-run.php", { command:shutdownstring} );
 	});
+	
+	$("#process").click(function() {
+	$.get("plugin/cmd-run.php", {command:"tasklist"},
+	function(data){
+    $(".text-tasklist").html(data);
+	});	
+	});
+	$(".btn-process").click(function() {
+	var processstring;
+	processstring = "taskkill /f /im " + $(".txt-process").val() + ".exe";
+	$.get("plugin/cmd-run.php", { command:processstring} );
+	$("#process").click;
+	});
+	
 });

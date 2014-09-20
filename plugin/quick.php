@@ -8,8 +8,8 @@
 	  <div class="icon-botton"><button type="button" class="btn btn-info">电脑静音</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="process" href="#"><img src="images/process.png" class="img-responsive hidden-xs"><br />		  	  
-	  <div class="icon-botton"><button type="button" class="btn btn-info">关闭程序</button></div></a>
+	  <a id="process" data-toggle="modal" data-target="#msgprocess" href="#msgbox"><img src="images/process.png" class="img-responsive hidden-xs"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">关闭进程</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
 	  <a id="shot" href="#"><img src="images/shot.png" class="img-responsive hidden-xs"><br />		  
@@ -65,7 +65,7 @@
     </div>
   </div>
 </div>
-
+<!-- 定时重启 -->
 <div class="modal fade" id="msgreboot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -87,6 +87,28 @@
         <button type="button" class="btn btn-primary btn-rshutdown">设定计划</button>
 		<button type="button" class="btn btn-warning btn-cancelst">取消计划</button>		
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 关闭程序 -->
+<div class="modal fade" id="msgprocess" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">关闭进程</h4>
+      </div>
+      <div class="modal-body">
+	  	<textarea class="form-control text-tasklist" rows="10" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <div class="input-group input-process">
+		<input type="text" class="form-control txt-process"  value="chrome">
+		<span class="input-group-btn">
+		<input name="submit_btn" type="submit"  class="btn btn-primary btn-process" value="结束">
+		</span>
+		</div>
       </div>
     </div>
   </div>

