@@ -22,5 +22,12 @@ $(function() {
 		$(this).siblings().removeClass("active");
 		$(".right-4").fadeIn();
 		$(this).addClass("active");
-	});	 	
+	});
+
+	$(".btn-cmd").click(function() {
+	$.get("plugin/cmd-run.php", {command:$(".txt-cmd").val()},
+	function(data){
+    $(".text-cmd").html(data);
+	});
+	});
 });
