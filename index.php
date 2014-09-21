@@ -8,17 +8,14 @@
   <link href="css/flat-ui.css" rel="stylesheet"> 
   <link href="css/base.css" rel="stylesheet" type="text/css" >
    <script src="js/vendor/jquery.min.js"></script>
-     <script src="js/bootstrap.min.js" type="text/javascript"></script> 
-
-    <script src="js/own.js"></script>
-  <script src="js/flat-ui-pro.min.js"></script>
-
+   <script src="js/bootstrap.min.js" type="text/javascript"></script> 
+   <script src="js/own.js"></script>
  </head> 
  <body>
  <div class="container-fluid">
  <div class="row-fluid">
 
-<div class="col-md-3"><h2 class="title">PC 管理</h1>
+<div class="col-md-3"><h3 class="title">PC 管理</h3>
 	<div class="list-group">
 	<a href="#" class="list-group-item active list1">运行状态</a>
 	<a href="#" class="list-group-item list2">快捷管理</a>
@@ -39,6 +36,12 @@
 		<?php include("./plugin/cmd.php");?>
 	</div> 
 	<div class="right-4" style="display:none">	
+		<?php include("./plugin/file.php");?>
+	</div> 
+	<div class="right-5" style="display:none">	
+		<?php include("./plugin/file.php");?>
+	</div> 
+	<div class="right-6" style="display:none">	
 		<?php include("./plugin/file.php");?>
 	</div> 
 </div> 

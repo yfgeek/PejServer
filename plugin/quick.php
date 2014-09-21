@@ -1,4 +1,4 @@
-	<h1>快捷管理</h1>
+	<h3>快捷管理</h3>
 	<blockquote>
 	<p>快捷管理系统简直萌萌哒</p>
 	</blockquote>
@@ -91,22 +91,31 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">定时关机</h4>
+        <h6 class="modal-title" id="myModalLabel">定时关机</h4>
       </div>
       <div class="modal-body">
+	  <div class="modal-case3" style="display:none" >
+		<p style="line-height:20px;">距离重启还有<span class="label label-success label-time" >1800</span>秒</p>
+		<div class="progress">
+
+		  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+		</div>
+	  </div>
+	  <div class="modal-case4" >
 	  	<div class="row">
-	    <div class="col-xs-4 icon-every">
+	    <div class="col-xs-4">
         <input type="text" class="form-control txt-time"  value="30" name="time">
 		</div>
-		<div class="col-xs-8 icon-every">
+		<div class="col-xs-8">
 		<p class="input-p">分钟后关闭计算机</p>
 		</div>
 		</div>
+	   </div>			
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-shutdown">设定计划</button>
+        <button type="button" class="btn btn-info btn-shutdown">设定计划</button>
 		<button type="button" class="btn btn-warning btn-cancelst" style="display:none">取消计划</button>		
-        <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
       </div>
     </div>
   </div>
@@ -117,7 +126,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">定时重启</h4>
+        <h6 class="modal-title" id="myModalLabel">定时重启</h4>
       </div>
       <div class="modal-body">
 	  <div class="modal-case1" style="display:none" >
@@ -132,16 +141,16 @@
 	    <div class="col-xs-4">
 		<input type="text" class="form-control txt-rtime"  value="30" name="time">
 		</div>
-		<div class="col-xs-8 icon-every">
+		<div class="col-xs-8">
 		<p class="input-p">分钟后重启计算机</p>
 		</div>
 		</div>
 	   </div>	
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-rshutdown">设定计划</button>
+        <button type="button" class="btn btn-info btn-rshutdown">设定计划</button>
 		<button type="button" class="btn btn-warning btn-rcancelst" style="display:none">取消计划</button>		
-        <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
       </div>
     </div>
   </div>
@@ -152,7 +161,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">关闭进程</h4>
+        <h6 class="modal-title" id="myModalLabel">关闭进程</h4>
       </div>
       <div class="modal-body">
 	  	<textarea class="form-control text-tasklist" rows="10" readonly></textarea>
@@ -161,7 +170,7 @@
         <div class="input-group input-process">
 		<input type="text" class="form-control txt-process"  placeholder="chrome">
 		<span class="input-group-btn">
-		<input name="submit_btn" type="submit"  class="btn btn-primary btn-process" value="结束">
+		<input name="submit_btn" type="submit"  class="btn btn-info btn-process" value="结束">
 		</span>
 		</div>
       </div>
@@ -175,14 +184,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close btn-delshot" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">查看截图</h4>
+        <h6 class="modal-title" id="myModalLabel">查看截图</h4>
       </div>
       <div class="modal-body">
 	  	<div class="imgshot">这里刷新您的截图</div>
       </div>
       <div class="modal-footer">
-         <button type="button" class="btn btn-primary btn-shot">立即截图</button>	
-         <button type="button" class="btn btn-default btn-delshot" data-dismiss="modal">关闭窗口</button>
+         <button type="button" class="btn btn-info btn-shot">立即截图</button>	
+         <button type="button" class="btn btn-primary btn-delshot" data-dismiss="modal">关闭窗口</button>
 		</span>
 		</div>
       </div>
@@ -195,15 +204,15 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">重启Teamviewer</h4>
+        <h6 class="modal-title" id="myModalLabel">重启Teamviewer</h4>
       </div>
 	  <div class="modal-body">
 	  	<textarea class="form-control text-team" rows="5" readonly></textarea>
       </div>
       <div class="modal-footer">
-         <button type="button" class="btn btn-primary btn-team">关闭Teamviewer</button>	
-         <button type="button" class="btn btn-primary btn-team-on">启动Teamviewer</button>	
-         <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+         <button type="button" class="btn btn-info btn-team">关闭Teamviewer</button>	
+         <button type="button" class="btn btn-info btn-team-on">启动Teamviewer</button>	
+         <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
       </div>
       </div>
     </div>
@@ -216,23 +225,23 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">音量调整</h4>
+        <h6 class="modal-title" id="myModalLabel">音量调整</h4>
       </div>
 	  <div class="modal-body">
 		<div class="btn-group btn-group-justified">
 		  <div class="btn-group">
-			<button type="button" class="btn btn-default">音量+</button>
+			<button type="button" class="btn btn-info volup">音量+</button>
 		  </div>
 		  <div class="btn-group">
-			<button type="button" class="btn btn-default">音量-</button>
+			<button type="button" class="btn btn-info voldown">音量-</button>
 		  </div>
 		  <div class="btn-group">
-			<button type="button" class="btn btn-default">静音</button>
+			<button type="button" class="btn btn-info volmute">静音</button>
 		  </div>
 		</div>		
       </div>
       <div class="modal-footer">
-         <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+         <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
       </div>
       </div>
     </div>

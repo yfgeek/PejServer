@@ -6,8 +6,6 @@ background: #E67E22;
 color: #fff;
 padding: 15px;
 border-radius: 4px;
--webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 border: solid 1px #CA6A14;
 }
 .right-2 .img-icon {
@@ -50,7 +48,9 @@ text-align:center;
 margin-bottom:5px;
 }
 .input-p{
-line-height:40px;
+font-size: 16px;
+line-height: 42px;
+margin-bottom: -20px;
 }
 .footer {
 background: #eee;
@@ -67,7 +67,7 @@ text-align: right;
 margin: 0 20px;
 }
 .text-tasklist {
-font-size: 10px;
+font-size: 12px;
 }
 .label-time {
 margin: 0 5px;

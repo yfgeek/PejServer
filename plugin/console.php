@@ -1,7 +1,7 @@
 
-<h1>运行状态</h1>
+<h3>运行状态</h3>
 	<blockquote>
-	<p>这里显示您的基本信息及权限</p>
+	<p>您的基本信息及权限</p>
 	</blockquote>
 	<table class="table table-striped">
 	<tr>

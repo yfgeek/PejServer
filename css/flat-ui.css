@@ -1223,8 +1223,8 @@ label {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.467;
-  color: #34495e;
-  border: 2px solid #bdc3c7;
+  color: #000000;
+  border: 1px solid #bdc3c7;
   border-radius: 6px;
   box-shadow: none;
   -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
@@ -1664,13 +1664,13 @@ select[multiple].input-group-sm > .select2-search input[type="text"] {
 .form-group.focus .input-group-btn .btn,
 .input-group.focus .input-group-btn .btn {
   color: #1abc9c;
-  background-color: #fff;
-  border-color: #1abc9c;
+  background-color: #3498db;
+  border-color: #3498db;
   }
 .form-group.focus .input-group-btn .btn-default,
 .input-group.focus .input-group-btn .btn-default {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #3498db;
   }
 .form-group.focus .input-group-btn .btn-default:hover,
 .input-group.focus .input-group-btn .btn-default:hover,
@@ -1685,8 +1685,8 @@ select[multiple].input-group-sm > .select2-search input[type="text"] {
 .open > .dropdown-toggle.form-group.focus .input-group-btn .btn-default,
 .open > .dropdown-toggle.input-group.focus .input-group-btn .btn-default {
   color: #fff;
-  background-color: #48c9b0;
-  border-color: #48c9b0;
+  background-color: #3498db;
+  border-color: #3498db;
   }
 .form-group.focus .input-group-btn .btn-default:active,
 .input-group.focus .input-group-btn .btn-default:active,
@@ -1694,8 +1694,8 @@ select[multiple].input-group-sm > .select2-search input[type="text"] {
 .input-group.focus .input-group-btn .btn-default.active,
 .open > .dropdown-toggle.form-group.focus .input-group-btn .btn-default,
 .open > .dropdown-toggle.input-group.focus .input-group-btn .btn-default {
-  background: #16a085;
-  border-color: #16a085;
+  background: #3498db;
+  border-color: #3498db;
   }
 .form-group.focus .input-group-btn .btn-default.disabled,
 .input-group.focus .input-group-btn .btn-default.disabled,
@@ -1733,8 +1733,8 @@ fieldset[disabled] .input-group.focus .input-group-btn .btn-default:active,
 .input-group.focus .input-group-btn .btn-default[disabled].active,
 fieldset[disabled] .form-group.focus .input-group-btn .btn-default.active,
 fieldset[disabled] .input-group.focus .input-group-btn .btn-default.active {
-  background-color: #bdc3c7;
-  border-color: #1abc9c;
+  background-color: #3498db;
+  border-color: #3498db;
   }
 .form-group.focus .input-group-btn .btn-default .badge,
 .input-group.focus .input-group-btn .btn-default .badge {
@@ -1744,9 +1744,6 @@ fieldset[disabled] .input-group.focus .input-group-btn .btn-default.active {
 .input-group-btn .btn {
   height: 42px;
   line-height: 18px;
-  color: #bdc3c7;
-  background-color: #fff;
-  border: 2px solid #bdc3c7;
   }
 .input-group-btn .btn-default {
   color: #fff;
