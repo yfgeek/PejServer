@@ -19,6 +19,10 @@
 	<td><?php echo memory_get_usage()?>MB</td>
 	</tr><tr>
 	<td>运行时间</td>
-	<td><?php $myRuntime =explode(",", exec('uptime')); print $myRuntime[0];?></td>
+	<td></td>
 	</tr>	
 	</table>
+<?php
+//$infosys =explode(" ", system('systeminfo'))
+?>	
+	

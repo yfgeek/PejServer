@@ -4,23 +4,28 @@
   <meta http-equiv="Content-Type" content="text/html; charset=GB2312" /> 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>我的PC管理</title> 
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-  <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />   
-  <link href="css/base.css" rel="stylesheet" type="text/css" />
- <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js" type="text/javascript"></script> 
-  <script src="js/own.js"></script>
+  <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+  <link href="css/flat-ui.css" rel="stylesheet"> 
+  <link href="css/base.css" rel="stylesheet" type="text/css" >
+   <script src="js/vendor/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js" type="text/javascript"></script> 
+
+    <script src="js/own.js"></script>
+  <script src="js/flat-ui-pro.min.js"></script>
+
  </head> 
  <body>
  <div class="container-fluid">
  <div class="row-fluid">
 
-<div class="col-md-3"><h1 class="title">PC 管理</h1>
+<div class="col-md-3"><h2 class="title">PC 管理</h1>
 	<div class="list-group">
 	<a href="#" class="list-group-item active list1">运行状态</a>
 	<a href="#" class="list-group-item list2">快捷管理</a>
 	<a href="#" class="list-group-item list3">命令执行</a>
-	<a href="#" class="list-group-item list4">文件操作</a>
+	<a href="#" class="list-group-item list4">文件管理</a>
+	<a href="#" class="list-group-item list5">浏览相册</a>
+	<a href="#" class="list-group-item list6">操作记录</a>	
 	</div>
 </div>
 <div class="col-md-9">
@@ -42,6 +47,6 @@
 </div>
 
  <?php include("./plugin/footer.php");?>
- 
+
    </body>
  </html>	
