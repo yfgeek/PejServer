@@ -11,9 +11,7 @@
   <script src="js/bootstrap.min.js" type="text/javascript"></script> 
   <script src="js/own.js"></script>
  </head> 
- 
  <body>
- 
  <div class="container-fluid">
  <div class="row-fluid">
 
