@@ -42,7 +42,8 @@
 
 </div>
 </div>
- 
+
+ <?php include("./plugin/footer.php");?>
  
    </body>
  </html>	

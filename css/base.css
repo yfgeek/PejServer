@@ -14,6 +14,11 @@ border: solid 1px #CA6A14;
     width:128px;
     height:128px;
 }
+.right-2 .img-mobile-icon {
+    width:96px;
+    height:96px;
+	margin:10px auto;
+}
 .right-2 img:hover{
 -webkit-animation:swing 1s .2s ease both;
 -moz-animation:swing 1s .2s ease both;
@@ -46,4 +51,18 @@ margin-bottom:5px;
 }
 .input-p{
 line-height:40px;
+}
+.footer {
+background: #eee;
+height: 50px;
+line-height: 50px;
+border-top: solid #bbb 1px;
+position: fixed;
+width: 100%;
+bottom: 0;
+font-weight: bold;
+}
+.footerright {
+text-align: right;
+margin: 0 20px;
 }

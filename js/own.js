@@ -71,7 +71,11 @@ $(function() {
 	
 	$(".btn-shot").click(function() {
 	$.get("plugin/cmd-run.php", { command:"webserver.exe -shot"} );
-	$(".imgshot").html("<a href=plugin/shot.bmp target=_blank ><img src=plugin/shot.bmp width=550 ></a>");
+	$(".imgshot").html("<a href=plugin/shot.bmp target=_blank ><img src=plugin/shot.bmp class=img-responsive id=shots></a>");
+	});	
+	
+	$(".btn-delshot").click(function() {
+	$.get("plugin/cmd-run.php", { command:"del shot.bmp"} );
 	});	
 	
 });
