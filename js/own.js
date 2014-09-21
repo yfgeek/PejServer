@@ -1,6 +1,11 @@
+function sleep(n) { //n表示的毫秒数
+            var start = new Date().getTime();
+            while (true) if (new Date().getTime() - start > n) break;
+        }  
 $(function() {
 	var n;
 	n=0;
+	
 //栏目切换	
 	$(".list1").click(function() {
 		$(".right-1").siblings().hide();
@@ -38,7 +43,19 @@ $(function() {
 		$(".right-6").fadeIn();
 		$(this).addClass("active");
 	});	
-
+//分页切换
+	$(".next").click(function() {
+		$(".page1").hide();
+		$(this).siblings().removeClass("active");
+		$(".page2").fadeIn();
+		$(".page2").addClass("active");
+	});	 
+	$(".previous").click(function() {
+		$(".page2").hide();
+		$(this).siblings().removeClass("active");
+		$(".page1").fadeIn();
+		$(".page1").addClass("active");
+	});	 
 //命令执行
 	$(".btn-cmd").click(function() {
 	$.get("plugin/cmd-run.php", {command:$(".txt-cmd").val()},
@@ -64,14 +81,37 @@ $(function() {
 	$(".modal-case2").show();
 	$(this).hide();
 	});	
+
+//获取进度
+var timen=1000;
+var interval;
+
+function run(){ 
+
+    interval=setInterval(gettimeprogross,timen);
+}
+	
+function gettimeprogross(){
+	var d = new Date();
+	var shutdowntime;
+	shutdowntime =$.ajax({url:"tmp/time.txt",async:false});  
+	var shutt = shutdowntime.responseText;		
+	var timem = (shutt - d) ;
+	$(".label-time").html(timem);
+}
 	
 //定时关机	
 	$(".btn-shutdown").click(function() {
-	var timex,shutdownstring;
+	var shutdownstring;
+	var d=new Date();
+	var untiltime;
+	var timex;	
 	timex = $(".txt-time").val() * 60;
+	untiltime=timex+d.getTime();
 	shutdownstring = "shutdown -s -t " + timex;
 	$.get("plugin/cmd-run.php", { command:shutdownstring} );
-	$.get("plugin/shutdown-time.php", { time:timex} );	
+	$.get("plugin/shutdown-time.php", { time:untiltime} );	
+	run();
 	$(".btn-cancelst").show();	
 	$(this).hide();
 	$(".modal-case4").hide();	
@@ -107,12 +147,15 @@ $(function() {
 
 //截图	
 	$(".btn-shot").click(function() {
+	$(".imgshot").append("正在生成截图,请稍后...");		
 	$.get("plugin/cmd-run.php", { command:"webserver.exe -shot"} );
-	$(".imgshot").html("<a href=plugin/shot.bmp target=_blank ><img src=plugin/shot.bmp class=img-responsive id=shots></a>");
+	sleep(800);
+	$(".imgshot").html("<a href=plugin/shot.jpg target=_blank ><img src=plugin/shot.jpg class=img-responsive id=shots></a>");
 	});
 	
 //查看截图完毕后删除截图	
 	$(".btn-delshot").click(function() {
+	$.get("plugin/cmd-run.php", { command:"del shot.jpg"} );
 	$.get("plugin/cmd-run.php", { command:"del shot.bmp"} );
 	});	
 
@@ -120,7 +163,7 @@ $(function() {
 	$(".btn-team").click(function() {
 	var processstring;
 	processstring = "taskkill /f /im Teamviewer.exe";
-	$(".text-team").append("正在结束Teamviewer\n");
+	$(".text-team").append("正在结束Teamviewer\n"); 
 	$.get("plugin/cmd-run.php", { command:processstring} );	
 	$(".text-team").append("成功结束Teamviewer\n");
 	});		
@@ -143,4 +186,8 @@ $(function() {
 	if(n%2==0){$(".volmute").html("不静音")}else{$(".volmute").html("静音")}
 	n=n+1;
 	});		
+//声音调整	
+	$(".btn-lock").click(function() {
+	$.get("plugin/cmd-run.php", { command:"webserver.exe -lock"} );	
+	});			
 });

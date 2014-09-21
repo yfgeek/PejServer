@@ -15,7 +15,7 @@
  <div class="container-fluid">
  <div class="row-fluid">
 
-<div class="col-md-3"><h3 class="title">PC 管理</h3>
+<div class="col-md-3"><h3 class="title"><?php echo $_SERVER["SERVER_NAME"] ?></h3>
 	<div class="list-group">
 	<a href="#" class="list-group-item active list1">运行状态</a>
 	<a href="#" class="list-group-item list2">快捷管理</a>

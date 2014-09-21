@@ -1,8 +1,9 @@
-	<h3>快捷管理</h3>
-	<blockquote>
-	<p>快捷管理系统简直萌萌哒</p>
-	</blockquote>
+<h3>快捷管理</h3>
+<blockquote>
+<p>快捷管理简直萌萌哒</p>
+</blockquote>	
 <!-- PC平板界面 -->	
+<div class="page1">
 	<div class="row  hidden-xs">
       <div class="col-xs-3 icon-every">
 	  <a id="mute" data-toggle="modal" data-target="#msgvol" href="#msgvol"><img src="images/mute.png" class="img-responsive img-iconimg-responsive img-icon"><br />	
@@ -28,6 +29,26 @@
 	  <div class="icon-botton"><button type="button" class="btn btn-info">重启Teamviewer</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
+	  <a id="lock" data-toggle="modal" data-target="#msglock" href="#msglock"><img src="images/lock.png" class="img-responsive img-iconimg-responsive img-icon"><br />	 	  
+	  <div class="icon-botton"><button type="button" class="btn btn-info">立即锁屏</button></div></a>
+      </div>
+      <div class="col-xs-3 icon-every">
+	  <a id="shutdown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/shutdown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">定时关机</button></div></a>
+      </div>
+      <div class="col-xs-3 icon-every">
+	  <a id="reboot" data-toggle="modal" data-target="#msgreboot" href="#msgreboot"><img src="images/reboot.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">定时重启</button></div></a>
+      </div>	  
+    </div>
+</div>	
+<div class="page2" style="display:none;">
+	<div class="row  hidden-xs">
+      <div class="col-xs-3 icon-every">
+	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>	  
+      </div>
+      <div class="col-xs-3 icon-every">
 	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
 	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>
       </div>
@@ -40,7 +61,37 @@
 	  <div class="icon-botton"><button type="button" class="btn btn-info">定时重启</button></div></a>
       </div>	  
     </div>
-	
+	<br>
+	<div class="row  hidden-xs">
+      <div class="col-xs-3 icon-every">
+	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>	  
+      </div>
+      <div class="col-xs-3 icon-every">
+	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>
+      </div>
+      <div class="col-xs-3 icon-every">
+	  <a id="shutdown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/shutdown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">定时关机</button></div></a>
+      </div>
+      <div class="col-xs-3 icon-every">
+	  <a id="reboot" data-toggle="modal" data-target="#msgreboot" href="#msgreboot"><img src="images/reboot.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">定时重启</button></div></a>
+      </div>	  
+    </div>
+</div>	
+<!--分页 -->
+<div class="row  hidden-xs">
+<div class="col-xs-3 col-xs-offset-9">
+<div class="pagination nav-page">
+            <ul>
+              <li class="previous active"><a href="#previous" class="fui-arrow-left"></a></li>
+              <li class="next"><a href="#next" class="fui-arrow-right"></a></li>
+            </ul>
+ </div>
+</div>
+</div>		  
 <!-- 手机界面 -->
 
 <div class="row  visible-xs">
@@ -241,6 +292,25 @@
 		</div>		
       </div>
       <div class="modal-footer">
+         <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- 立即锁屏 -->
+<div class="modal fade" id="msglock" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h6 class="modal-title" id="myModalLabel">立即锁屏</h4>
+      </div>
+	  <div class="modal-body">
+		请确认是否锁屏
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-info btn-lock">立即锁屏</button>		  
          <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
       </div>
       </div>

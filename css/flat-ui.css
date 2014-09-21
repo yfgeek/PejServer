@@ -473,9 +473,8 @@ h6,
   font-size: 24px;
   }
 p {
-  margin: 0 0 15px;
+  margin: 0;
   font-size: 18px;
-  line-height: 1.72222;
   }
 .lead {
   margin-bottom: 30px;
