@@ -70,7 +70,7 @@
       </div>
       <div class="col-xs-6">
 	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-mobile-iconimg-responsive img-mobile-icon"><br />	  
-	  <div class="icon-botton"><button type="button" class="btn btn-info">重发WIFI</button></div></a>
+	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>
       </div>
 </div>
 <div class="row  visible-xs">
