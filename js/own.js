@@ -69,4 +69,9 @@ $(function() {
 	$("#process").click;
 	});
 	
+	$(".btn-shot").click(function() {
+	$.get("plugin/cmd-run.php", { command:"webserver.exe -shot"} );
+	$(".imgshot").html("<a href=plugin/shot.bmp target=_blank ><img src=plugin/shot.bmp width=550 ></a>");
+	});	
+	
 });
