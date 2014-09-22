@@ -87,17 +87,21 @@ var timen=1000;
 var interval;
 
 function run(){ 
-
     interval=setInterval(gettimeprogross,timen);
 }
 	
 function gettimeprogross(){
 	var d = new Date();
-	var shutdowntime;
+	var shutdowntime;	
+	var timex;	
+	timex = $(".txt-time").val() * 60;	
 	shutdowntime =$.ajax({url:"tmp/time.txt",async:false});  
 	var shutt = shutdowntime.responseText;		
-	var timem = (shutt - d) ;
-	$(".label-time").html(timem);
+	var timem = (shutt - d)/1000 ;
+	var timeleft = (100- timem/timex*100) + "%" ;
+	$(".label-time").html(timem.toFixed(0));
+	$(".untiltime").css("width",timeleft);
+
 }
 	
 //定时关机	
@@ -107,7 +111,7 @@ function gettimeprogross(){
 	var untiltime;
 	var timex;	
 	timex = $(".txt-time").val() * 60;
-	untiltime=timex+d.getTime();
+	untiltime=timex*1000+d.getTime();
 	shutdownstring = "shutdown -s -t " + timex;
 	$.get("plugin/cmd-run.php", { command:shutdownstring} );
 	$.get("plugin/shutdown-time.php", { time:untiltime} );	
@@ -119,10 +123,16 @@ function gettimeprogross(){
 	});
 //定时重启	
 	$(".btn-rshutdown").click(function() {
-	var timex,shutdownstring;
+	var shutdownstring;
+	var d=new Date();
+	var untiltime;
+	var timex;	
 	timex = $(".txt-rtime").val() * 60;
+	untiltime=timex*1000+d.getTime();
 	shutdownstring = "shutdown -r -t " + timex;
 	$.get("plugin/cmd-run.php", { command:shutdownstring} );
+	$.get("plugin/shutdown-time.php", { time:untiltime} );	
+	run();	
 	$(this).hide();
 	$(".btn-rcancelst").show();
 	$(".modal-case2").hide();	
@@ -150,7 +160,7 @@ function gettimeprogross(){
 	$(".imgshot").append("正在生成截图,请稍后...");		
 	$.get("plugin/cmd-run.php", { command:"webserver.exe -shot"} );
 	sleep(800);
-	$(".imgshot").html("<a href=plugin/shot.jpg target=_blank ><img src=plugin/shot.jpg class=img-responsive id=shots></a>");
+	$(".imgshot").html("<a href=plugin/shot.jpg target=_blank ><img src=plugin/shot.jpg?hash=" + Math.random() + " class=img-responsive id=shots></a>");
 	});
 	
 //查看截图完毕后删除截图	
@@ -186,8 +196,9 @@ function gettimeprogross(){
 	if(n%2==0){$(".volmute").html("不静音")}else{$(".volmute").html("静音")}
 	n=n+1;
 	});		
-//声音调整	
+//锁定屏幕	
 	$(".btn-lock").click(function() {
 	$.get("plugin/cmd-run.php", { command:"webserver.exe -lock"} );	
+	$(".lckscreen").html("远程电脑屏幕已锁定");
 	});			
 });

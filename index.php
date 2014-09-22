@@ -22,7 +22,8 @@
 	<a href="#" class="list-group-item list3">命令执行</a>
 	<a href="#" class="list-group-item list4">文件管理</a>
 	<a href="#" class="list-group-item list5">浏览相册</a>
-	<a href="#" class="list-group-item list6">操作记录</a>	
+	<a href="#" class="list-group-item list6">配置文件</a>	
+	<a href="#" class="list-group-item list7">操作记录</a>	
 	</div>
 </div>
 <div class="col-md-9">

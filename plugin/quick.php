@@ -45,12 +45,12 @@
 <div class="page2" style="display:none;">
 	<div class="row  hidden-xs">
       <div class="col-xs-3 icon-every">
-	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <a id="proxy" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
 	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>	  
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
-	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>
+	  <a id="vmware" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <div class="icon-botton"><button type="button" class="btn btn-info">启动虚拟机</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
 	  <a id="shutdown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/shutdown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
@@ -146,10 +146,10 @@
       </div>
       <div class="modal-body">
 	  <div class="modal-case3" style="display:none" >
-		<p style="line-height:20px;">距离重启还有<span class="label label-success label-time" >1800</span>秒</p>
+		<p style="line-height:40px;">距离重启还有<span class="label label-success label-time" >1800</span>秒</p>
 		<div class="progress">
 
-		  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+		  <div class="progress-bar progress-bar-success untiltime" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
 		</div>
 	  </div>
 	  <div class="modal-case4" >
@@ -181,10 +181,10 @@
       </div>
       <div class="modal-body">
 	  <div class="modal-case1" style="display:none" >
-		<p style="line-height:20px;">距离重启还有<span class="label label-success label-time" >1800</span>秒</p>
+		<p style="line-height:40px;">距离重启还有<span class="label label-success label-time" >1800</span>秒</p>
 		<div class="progress">
 
-		  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"></div>
+		  <div class="progress-bar progress-bar-success untiltime" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
 		</div>
 	  </div>
 	  <div class="modal-case2" >
@@ -307,7 +307,7 @@
         <h6 class="modal-title" id="myModalLabel">立即锁屏</h4>
       </div>
 	  <div class="modal-body">
-		请确认是否锁屏
+		<div class="lckscreen">请确认是否锁屏</div>
       </div>
       <div class="modal-footer">
          <button type="button" class="btn btn-info btn-lock">立即锁屏</button>		  
