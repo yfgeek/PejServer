@@ -16,13 +16,13 @@
  <div class="row-fluid">
 
 <div class="col-md-3"><h3 class="title"><?php echo $_SERVER["SERVER_NAME"] ?></h3>
-	<div class="list-group">
+	<div class="list-group lists">
 	<a href="#" class="list-group-item active list1">运行状态</a>
 	<a href="#" class="list-group-item list2">快捷管理</a>
 	<a href="#" class="list-group-item list3">命令执行</a>
 	<a href="#" class="list-group-item list4">文件管理</a>
 	<a href="#" class="list-group-item list5">浏览相册</a>
-	<a href="#" class="list-group-item list6">配置文件</a>	
+	<a href="#" class="list-group-item list6 hidden-xs">配置文件</a>	
 	<a href="#" class="list-group-item list7">操作记录</a>	
 	</div>
 </div>
@@ -42,15 +42,18 @@
 	<div class="right-5" style="display:none">	
 		<?php include("./plugin/file.php");?>
 	</div> 
-	<div class="right-6" style="display:none">	
-		<?php include("./plugin/file.php");?>
+	<div class="right-6 hidden-xs" style="display:none">	
+		<?php include("./plugin/config.php");?>
 	</div> 
+	<div class="right-7" style="display:none">	
+		<?php include("./plugin/file.php");?>
+	</div> 	
 </div> 
 
 </div>
 </div>
 
  <?php include("./plugin/footer.php");?>
-
+<div class="tmp" style="display:none">123</div>
    </body>
  </html>	

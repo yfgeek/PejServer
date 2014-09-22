@@ -1,3 +1,8 @@
+/*
+author:yfgeek
+website:www.yfgeek.com
+version:beta1
+*/
 function sleep(n) { //n表示的毫秒数
             var start = new Date().getTime();
             while (true) if (new Date().getTime() - start > n) break;
@@ -7,42 +12,20 @@ $(function() {
 	n=0;
 	
 //栏目切换	
-	$(".list1").click(function() {
-		$(".right-1").siblings().hide();
-		$(this).siblings().removeClass("active");
-		$(".right-1").fadeIn();
-		$(this).addClass("active");
-	});	 
-	$(".list2").click(function() {
-		$(".right-2").siblings().hide();
-		$(this).siblings().removeClass("active");
-		$(".right-2").fadeIn();
-		$(this).addClass("active");
-	});	 
-	$(".list3").click(function() {
-		$(".right-3").siblings().hide();
-		$(this).siblings().removeClass("active");
-		$(".right-3").fadeIn();
-		$(this).addClass("active");
-	});	 
-	$(".list4").click(function() {
-		$(".right-4").siblings().hide();
-		$(this).siblings().removeClass("active");
-		$(".right-4").fadeIn();
-		$(this).addClass("active");
-	});
-	$(".list5").click(function() {
-		$(".right-5").siblings().hide();
-		$(this).siblings().removeClass("active");
-		$(".right-5").fadeIn();
-		$(this).addClass("active");
-	});
-	$(".list6").click(function() {
-		$(".right-6").siblings().hide();
-		$(this).siblings().removeClass("active");
-		$(".right-6").fadeIn();
-		$(this).addClass("active");
+	function listit(num){
+		var numstring=".right-" + num;
+		var liststring=".list" + num;		
+		$(numstring).siblings().hide();
+		$(liststring).siblings().removeClass("active");
+		$(numstring).fadeIn();
+		$(liststring).addClass("active");
+	};
+	$(".list-group-item").each(function(i){
+    $(this).click(function() {
+	listit(i+1);
 	});	
+	});
+
 //分页切换
 	$(".next").click(function() {
 		$(".page1").hide();
@@ -67,6 +50,7 @@ $(function() {
 //取消关机
 	$(".btn-cancelst").click(function() {
 	$.get("plugin/cmd-run.php", { command:"shutdown -a"} );
+	$.get("plugin/shutdown-time.php", {shutdown:"s",time:"0",timex:"0"} );		
 	$(this).hide();
 	$(".btn-shutdown").show();
 	$(".modal-case3").hide();	
@@ -76,6 +60,7 @@ $(function() {
 //取消重启	
 	$(".btn-rcancelst").click(function() {
 	$.get("plugin/cmd-run.php", { command:"shutdown -a"} );
+	$.get("plugin/shutdown-time.php", {shutdown:"r",time:"0",timex:"0"} );		
 	$(".btn-rshutdown").show();
 	$(".modal-case1").hide();	
 	$(".modal-case2").show();
@@ -84,37 +69,58 @@ $(function() {
 
 //获取进度
 var timen=1000;
-var interval;
+var interval,shutdowntime,ifshutdown,timexn;
+	
+function ifsetshutdown(){
+	var d = new Date();	
+	var ifshut;
+	var shutdowntimes;
+	$.getJSON("tmp/time.json",function(json){ 
+	shutdowntimes = json.time;
+	//alert(shutdowntimes);
+	});
+	//alert(shutdowntimes);//形参实参传递存在问题
+	if(shutdowntimes > d.getTime() ) {ifsetshutdown() = true} else {return false};	
+}
 
-function run(){ 
-    interval=setInterval(gettimeprogross,timen);
+function run(){
+	$.getJSON("tmp/time.json",function(data){ 
+	ifshutdown = data["shutdown"];
+	shutdowntime = data["time"];
+	timexn = data["timex"];	
+    interval=setInterval(gettimeprogross,timen);	
+	});
+
 }
 	
 function gettimeprogross(){
-	var d = new Date();
-	var shutdowntime;	
-	var timex;	
-	timex = $(".txt-time").val() * 60;	
-	shutdowntime =$.ajax({url:"tmp/time.txt",async:false});  
-	var shutt = shutdowntime.responseText;		
-	var timem = (shutt - d)/1000 ;
-	var timeleft = (100- timem/timex*100) + "%" ;
+	var d = new Date();	
+	var timem = (shutdowntime - d.getTime())/1000 ;
+	var timeleft = (100- timem/timexn*100) + "%" ;
 	$(".label-time").html(timem.toFixed(0));
 	$(".untiltime").css("width",timeleft);
-
 }
+//点击定时关机按钮	
+
+	if(ifsetshutdown()){
+	$(".btn-shutdown").hide();		
+	$(".btn-cancelst").show();	
+	$(".modal-case4").hide();	
+	$(".modal-case3").show();
+	}
+	
 	
 //定时关机	
 	$(".btn-shutdown").click(function() {
 	var shutdownstring;
 	var d=new Date();
 	var untiltime;
-	var timex;	
+	var timex;		
 	timex = $(".txt-time").val() * 60;
 	untiltime=timex*1000+d.getTime();
 	shutdownstring = "shutdown -s -t " + timex;
 	$.get("plugin/cmd-run.php", { command:shutdownstring} );
-	$.get("plugin/shutdown-time.php", { time:untiltime} );	
+	$.get("plugin/shutdown-time.php", {shutdown:"s",time:untiltime,timex:timex} );	
 	run();
 	$(".btn-cancelst").show();	
 	$(this).hide();
@@ -131,7 +137,7 @@ function gettimeprogross(){
 	untiltime=timex*1000+d.getTime();
 	shutdownstring = "shutdown -r -t " + timex;
 	$.get("plugin/cmd-run.php", { command:shutdownstring} );
-	$.get("plugin/shutdown-time.php", { time:untiltime} );	
+	$.get("plugin/shutdown-time.php", {shutdown:"r",time:untiltime,timex:timex} );	
 	run();	
 	$(this).hide();
 	$(".btn-rcancelst").show();

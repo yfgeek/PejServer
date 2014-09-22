@@ -4071,7 +4071,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .pagination li.active.previous > span:focus,
 .pagination li.active.next > span:focus {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #5dade2;
   }
 .pagination li:first-child > a,
 .pagination li:first-child > span {
@@ -4160,7 +4160,7 @@ fieldset[disabled] .twitter-typeahead .tt-hint {
 .pagination li > a:focus,
 .pagination li > span:focus {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #5dade2;
   }
 .pagination li > a:active,
 .pagination li > span:active {

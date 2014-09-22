@@ -49,36 +49,36 @@
 	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>	  
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="vmware" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <a id="vmware" href="#"><img src="images/vmware.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
 	  <div class="icon-botton"><button type="button" class="btn btn-info">启动虚拟机</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="shutdown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/shutdown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
-	  <div class="icon-botton"><button type="button" class="btn btn-info">定时关机</button></div></a>
+	  <a id="unknown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/unknown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">待定功能</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="reboot" data-toggle="modal" data-target="#msgreboot" href="#msgreboot"><img src="images/reboot.png" class="img-responsive img-iconimg-responsive img-icon"><br />
-	  <div class="icon-botton"><button type="button" class="btn btn-info">定时重启</button></div></a>
+	  <a id="unknown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/unknown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">待定功能</button></div></a>
       </div>	  
     </div>
 	<br>
 	<div class="row  hidden-xs">
       <div class="col-xs-3 icon-every">
-	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
-	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>	  
+	  <a id="unknown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/unknown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">待定功能</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="shutdown" href="#"><img src="images/wifi.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
-	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>
+	  <a id="unknown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/unknown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">待定功能</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="shutdown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/shutdown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
-	  <div class="icon-botton"><button type="button" class="btn btn-info">定时关机</button></div></a>
+	  <a id="unknown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/unknown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">待定功能</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="reboot" data-toggle="modal" data-target="#msgreboot" href="#msgreboot"><img src="images/reboot.png" class="img-responsive img-iconimg-responsive img-icon"><br />
-	  <div class="icon-botton"><button type="button" class="btn btn-info">定时重启</button></div></a>
-      </div>	  
+	  <a id="unknown" data-toggle="modal" data-target="#msgbox" href="#msgbox"><img src="images/unknown.png" class="img-responsive img-iconimg-responsive img-icon"><br />
+	  <div class="icon-botton"><button type="button" class="btn btn-info">待定功能</button></div></a>
+      </div>  
     </div>
 </div>	
 <!--分页 -->
