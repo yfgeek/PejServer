@@ -18,11 +18,7 @@
 
 	<td><?php echo memory_get_usage()?>MB</td>
 	</tr><tr>
-	<td>运行时间</td>
-	<td></td>
+	<td>程序版本</td>
+	<td>beta2</td>
 	</tr>	
 	</table>
-<?php
-//$infosys =explode(" ", system('systeminfo'))
-?>	
-	

@@ -1,4 +1,4 @@
-<h3>配置信息</h3>
+<h3>配置文件</h3>
 	<blockquote>
 	<p>请预先设置您的信息</p>
 	</blockquote>
@@ -125,33 +125,3 @@
       </div>
     </div>
 </div>
-
-  
-	<table class="table table-striped" style="display:none">
-	<tr>
-	<td>Teamviwer地址</td>
-	<td><input type="text" value="C:\Program Files (x86)\TeamViewer\Version9\TeamViewer.exe" class="form-control"></td>
-	</tr>
-	<tr>
-	<td>CCproxy地址</td>
-	<td><input type="text" value="C:\CCProxy\CCProxy.exe" class="form-control"></td>
-	</tr>
-	<tr>
-	<td>Vmware地址</td>
-	<td><input type="text" value="C:\Program Files (x86)\VMware\VMware Workstation\vmware.exe" class="form-control"></td>
-	</tr>
-	<tr>
-	<td>虚拟机系统1</td>
-	<td><input type="text" value="D:\CodeXP\CodeXP.vmx" class="form-control"></td>
-	</tr><tr>
-	<td>虚拟机系统2</td>
-	<td><input type="text" value="D:\CodeXP\CodeXP.vmx" class="form-control"></td>
-	</tr><tr>
-	<td>虚拟机系统3</td>
-	<td><input type="text" value="D:\CodeXP\CodeXP.vmx" class="form-control"></td>
-	</tr>
-	<tr>
-	<td>功能</td>
-	<td><input type="text" value="" class="form-control"></td>
-	</tr>	
-	</table>

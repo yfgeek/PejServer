@@ -1,7 +1,7 @@
 <h3>快捷管理</h3>
 <blockquote>
 <p>快捷管理简直萌萌哒</p>
-</blockquote>	
+</blockquote>
 <!-- PC平板界面 -->	
 <div class="page1">
 	<div class="row  hidden-xs">
@@ -49,7 +49,7 @@
 	  <div class="icon-botton"><button type="button" class="btn btn-info">开启代理</button></div></a>	  
       </div>
       <div class="col-xs-3 icon-every">
-	  <a id="vmware" href="#"><img src="images/vmware.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
+	  <a id="vmware" data-toggle="modal" data-target="#msgvm" href="#msgvm" ><img src="images/vmware.png" class="img-responsive img-iconimg-responsive img-icon"><br />	  
 	  <div class="icon-botton"><button type="button" class="btn btn-info">启动虚拟机</button></div></a>
       </div>
       <div class="col-xs-3 icon-every">
@@ -311,6 +311,49 @@
       </div>
       <div class="modal-footer">
          <button type="button" class="btn btn-info btn-lock">立即锁屏</button>		  
+         <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
+      </div>
+      </div>
+    </div>
+</div>
+
+<!-- 虚拟机 -->
+<div class="modal fade" id="msgvm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h6 class="modal-title" id="myModalLabel">启动虚拟机</h4>
+      </div>
+	  <div class="modal-body">
+	<div class="row">
+        <div class="col-xs-4">
+          <div class="tile">
+            <img src="images/system.png" alt="Compas" class="tile-image big-illustration hidden-xs">
+            <h3 class="tile-title">系统1</h3>
+            <p>名字</p>
+            <a class="btn btn-info btn-large btn-block"  data-toggle="modal" data-target="#confteam" href="#confteam">立即开机</a>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="tile">
+            <img src="images/system.png" alt="Compas" class="tile-image big-illustration hidden-xs">
+            <h3 class="tile-title">系统2</h3>
+            <p>名字</p>
+            <a class="btn btn-info btn-large btn-block"  data-toggle="modal" data-target="#confproxy" href="#confproxy">立即开机</a>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="tile">
+            <img src="images/system.png" alt="Compas" class="tile-image big-illustration hidden-xs">
+            <h3 class="tile-title">系统3</h3>
+            <p>名字</p>
+            <a class="btn btn-info btn-large btn-block"  data-toggle="modal" data-target="#confvm" href="#confvm">立即开机</a>
+          </div>
+        </div>
+	</div>	
+      </div>
+      <div class="modal-footer">
          <button type="button" class="btn btn-primary" data-dismiss="modal">关闭窗口</button>
       </div>
       </div>

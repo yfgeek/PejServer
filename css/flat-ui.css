@@ -2824,11 +2824,11 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   }
 .navbar {
   min-height: 53px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   font-size: 16px;
   border: none;
-  border-radius: 6px;
-  }
+  margin-top: 10px;
+}
 @media (min-width: 768px) {
   .navbar-header {
     float: left;
